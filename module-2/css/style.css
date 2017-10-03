@@ -1,0 +1,107 @@
+
+@font-face {
+	font-family: 'Pathway Gothic One';
+	src: url('../fonts/PathwayGothicOne-Book.eot');
+	src: url('../fonts/PathwayGothicOne-Book.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/PathwayGothicOne-Book.woff') format('woff'),
+		 url('../fonts/PathwayGothicOne-Book.ttf') format('truetype'),
+		 url('../fonts/PathwayGothicOne-Book.svg#PathwayGothicOne-Book') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	width: 480px;
+	background: #fff;
+	margin: auto;
+}
+
+.header, .conteiner, .principles, .offers, .links {
+	text-align: left;
+}
+h1 {
+	font-family: "Pathway Gothic One", sans-serif;
+	font-size: 25px;
+	color: #263555;
+}
+
+.header h1 {
+	padding: 60px 38px 35px;
+}
+
+.image {
+	padding-left: 38px;
+	padding-bottom: 27px;
+}
+
+.title {
+	font-family: Arial, sans-serif;
+	font-size: 15px;
+	color: #263555;
+	padding-bottom: 24px;
+	padding-left: 38px;
+}
+
+.conteiner h1 {
+	padding-left: 38px;
+	padding-top: 28px;
+	padding-bottom: 24px; 
+}
+
+.principles h1 {
+	padding: 17px 0 31px 38px;
+}
+
+.pre-title {
+	padding-left: 75px;
+	padding-bottom: 10px;
+	font-size: 15px;
+	font-family: Arial, sans-serif;
+	color: #263555;
+	width: 240px;
+}
+
+p {
+	font-family: Arial, sans-serif;
+	color: #4e5050;
+	font-size: 12px;
+	padding-left: 38px;
+}
+
+.principles p {
+	padding-left: 75px;
+	padding-bottom: 27px;
+}
+
+.offers h1 {
+	padding-top: 27px;
+	padding-left: 38px;
+	padding-bottom: 27px;
+}
+
+.arrows {
+	padding-top: 40px;
+}
+
+ul {
+	padding-left: 38px;
+	font-family: Arial, sans-serif;
+	font-size: 15px;
+	color: #263555;
+}
+
+li {
+	width: 46%;
+	padding-right: 15px;
+	padding-bottom: 25px;
+	display: inline-block;
+}
+
+li img {
+	padding-right: 10px;
+}
