@@ -1,0 +1,224 @@
+@font-face {
+	font-family: 'Pathway Gothic One';
+	src: url('../fonts/PathwayGothicOne-Book.eot');
+	src: url('../fonts/PathwayGothicOne-Book.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/PathwayGothicOne-Book.woff') format('woff'),
+		 url('../fonts/PathwayGothicOne-Book.ttf') format('truetype'),
+		 url('../fonts/PathwayGothicOne-Book.svg#PathwayGothicOne-Book') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 80px 0;
+	background-image: url(../img/background.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+}
+
+.wrapper {
+	width: 1020px;
+	background: #fff;
+	margin: auto;
+	padding: 30px 0;
+}
+
+.left {
+	width: 66%;
+	display: inline-block;
+}
+
+.image {
+	float: left;
+	padding: 50px 0 10px 40px;
+}
+
+.left h1 {
+	padding: 40px 0 10px 40px;
+	font-size: 25px;
+	font-family: "PathwayGothicOne-Book", sans-serif;
+	color: #263555;
+}
+
+.title {
+	padding: 40px 0 10px 425px;
+	font-family: "Arial Regular", sans-serif;
+	font-size: 15px;
+	color: #263555;
+}
+
+.one {
+	font-family: "Arial Regular", sans-serif;
+	font-size: 13px;
+	padding-left:425px;
+	text-align: justify;
+}
+
+.two {
+	font-family: "Arial Regular", sans-serif;
+	font-size: 13px;
+	padding-top: 40px;
+	padding-bottom: 10px;
+	padding-left:40px;
+	text-align: justify;
+}
+
+.right {
+	width: 33%;
+	display: inline-block;
+}
+
+/*.block_one .right {
+	padding-top: 80px;
+}*/
+
+.right h1 {
+	padding: 40px 0 10px 40px;
+	font-size: 25px;
+	font-family: "PathwayGothicOne-Book", sans-serif;
+	color: #263555;
+}
+
+ol li {
+	font-family: "Arial Regular", sans-serif;
+	font-size: 13px;
+	padding-left: 30px;
+}
+
+ol .title {
+	padding-left: 0;
+}
+
+ol {
+	padding-left: 60px;
+	list-style: none;
+	counter-reset: point;
+}
+
+ol li {
+	position: relative;
+}
+
+ol li:after {
+	content: counter(point);
+	counter-increment: point 1;
+	font-size: 13px;
+	font-family: "Arial Regular", sans-serif; 
+	position: absolute;
+	left: -20px;
+	top: 50px;
+	background: #38a;
+	border-radius: 50px;
+	width: 30px;
+	height: 30px;
+	color: #fff;
+	line-height: 30px;
+	text-align: center;
+}
+
+hr {
+	width: 930px;
+    border-color: #dedbdb;
+	margin: 55px 40px 60px;
+}
+
+.block_two .left .title {
+	padding-top: 30px;
+	padding-left: 40px; 
+}
+
+.block_two .right {
+	float: right;
+	padding-left: 40px;
+}
+
+.block_two .right h1 {
+	padding: 30px 0 30px 40px;
+}
+
+.square {
+	width: 210px;
+	height: 190px;
+	background: #fcfafa;
+	border: 1px solid #dfdcdc;
+}
+
+.quote:before {
+	content: "\201c";
+	color: #38afe5;
+	display: inline-block;
+	color: #263555;
+}
+
+.quote:after {
+	content: "\201d";
+	color: #38afe5;
+	display: inline-block;
+	color: #263555;
+}
+
+.quote {
+	font-family: "Arial Regular", sans-serif;
+	font-size: 15px;
+	color: #263555;
+	padding: 20px;
+}
+
+.triangle {
+	width: 0;
+	height: 0;
+	border-left: 27px solid transparent;
+	border-right: 27px solid transparent;
+	border-top: 50px solid #fcfafa;
+	margin: 0 auto;
+
+}
+
+.author {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	color: #263555;
+	padding-top: 70px;
+	padding-left: 50px;
+}
+
+.director {
+	font-family: Arial, sans-serif;
+	font-size: 13px;
+	color: #4e5050;
+	padding-top: 20px;
+	padding-left: 15px;
+}
+
+.arrows {
+	padding-top: 40px;
+}
+
+.arrows ul {
+	padding-left: 38px;
+	font-family: Arial, sans-serif;
+	font-size: 15px;
+	color: #263555;
+}
+
+.arrows li {
+	width: 46%;
+	padding-right: 15px;
+	padding-bottom: 25px;
+	display: inline-block;
+}
+
+.arrows ul li:before {
+	content: "\2192";
+	color: #38afe5;
+	display: inline-block;
+	margin-right: 20px;
+}
+
