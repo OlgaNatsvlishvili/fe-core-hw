@@ -30,6 +30,10 @@ body {
 	padding: 30px 0;
 }
 
+.block_one {
+	margin-left: 40px;
+}
+
 .left {
 	width: 66%;
 	display: inline-block;
@@ -37,18 +41,19 @@ body {
 
 .image {
 	float: left;
-	padding: 50px 0 10px 40px;
+	padding: 50px 0 10px 0;
+	margin-right: 40px;
 }
 
 .left h1 {
-	padding: 40px 0 10px 40px;
+	padding: 40px 0 10px 0;
 	font-size: 25px;
 	font-family: "PathwayGothicOne-Book", sans-serif;
 	color: #263555;
 }
 
 .title {
-	padding: 40px 0 10px 425px;
+	padding: 40px 0 10px;
 	font-family: "Arial Regular", sans-serif;
 	font-size: 15px;
 	color: #263555;
@@ -57,16 +62,13 @@ body {
 .one {
 	font-family: "Arial Regular", sans-serif;
 	font-size: 13px;
-	padding-left:425px;
 	text-align: justify;
 }
 
 .two {
 	font-family: "Arial Regular", sans-serif;
 	font-size: 13px;
-	padding-top: 40px;
-	padding-bottom: 10px;
-	padding-left:40px;
+	padding-top: 10px;
 	text-align: justify;
 }
 
@@ -75,12 +77,7 @@ body {
 	display: inline-block;
 }
 
-/*.block_one .right {
-	padding-top: 80px;
-}*/
-
 .right h1 {
-	padding: 40px 0 10px 40px;
 	font-size: 25px;
 	font-family: "PathwayGothicOne-Book", sans-serif;
 	color: #263555;
@@ -129,9 +126,9 @@ hr {
 	margin: 55px 40px 60px;
 }
 
-.block_two .left .title {
-	padding-top: 30px;
-	padding-left: 40px; 
+.block_two {
+	margin-left: 40px;
+	margin-top: 30px;
 }
 
 .block_two .right {
@@ -150,35 +147,25 @@ hr {
 	border: 1px solid #dfdcdc;
 }
 
-.quote:before {
+.square:before {
 	content: "\201c";
 	color: #38afe5;
 	display: inline-block;
 	color: #263555;
 }
 
-.quote:after {
+.square:after {
 	content: "\201d";
 	color: #38afe5;
 	display: inline-block;
 	color: #263555;
 }
 
-.quote {
+.square {
 	font-family: "Arial Regular", sans-serif;
 	font-size: 15px;
 	color: #263555;
-	padding: 20px;
-}
-
-.triangle {
-	width: 0;
-	height: 0;
-	border-left: 27px solid transparent;
-	border-right: 27px solid transparent;
-	border-top: 50px solid #fcfafa;
-	margin: 0 auto;
-
+	padding: 10px;
 }
 
 .author {
@@ -187,6 +174,7 @@ hr {
 	color: #263555;
 	padding-top: 70px;
 	padding-left: 50px;
+	padding-right: 50px;
 }
 
 .director {

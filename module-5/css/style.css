@@ -1,0 +1,235 @@
+body {
+	background-image: url(../img/bckg.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+}
+
+.wrapper {
+	width: 100%;
+}
+
+.menu {
+	width: 1024px;
+  	font-size: 20px;
+  	color: #fff;
+  	text-transform: uppercase;
+  	font-family: "PathwayGothicOne Book", sans-serif;
+  	position: relative;
+  	margin: 0 auto;
+ }
+
+.menu__item {
+  	position: relative;
+  	display: inline-block;
+}
+
+.submenu:before {
+	content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: #fff transparent;
+    position: absolute;
+    top: -10px;
+    left: 47px;
+}
+
+.menu__item > a,
+.submenu__item > a {
+  	display: inline-block;
+  	padding: 10px 30px; 
+  	color: var(--accent-color);
+  	text-decoration: none;
+}
+
+.menu__item>a:hover {
+	color: #263555;
+}
+
+.submenu {
+  	display: none;
+  	position: absolute;
+  	left: -20px;
+  	list-style: none;
+  	color: #6b7488;
+  	margin-top: 10px;
+  	border-radius: 5px;
+	height: 85px;
+	font-size: 14px;
+	margin-left: 25px;
+	line-height: 5px;
+}
+
+.menu__item:hover>.submenu {
+  	display: block;
+  	background: #fff;
+}
+
+.logo {
+	display: block;
+	position: relative;
+	width: 140px;
+	height: 140px;
+	border-radius: 50%;
+	background-color: #fff;
+	font-family: Dorsa, sans-serif;
+	font-size: 60px;
+	line-height: 140px;
+	font-weight: normal;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #263555;
+	margin-top: 45px;
+}
+
+article {
+	width: 1024px;
+	background: #fff;
+	margin: 0 auto;
+	margin-top: 80px;
+	position: relative;
+}
+
+.slider img {
+	margin: 62px;
+}
+
+.slider:before {
+	content: "THERE ARE PLENTY OF PLACES";
+    display: inline-block;
+    width: 225px;
+    height: 60px;
+    background: #fff;
+    position: absolute;
+    top: 285px;
+    left: 61px;
+    text-align: center;
+    font-size: 13px;
+    font-family: "PathwayGothicOne Book", sans-serif;
+    color: #263555;
+    line-height: 4.5;
+}
+
+.slider:after {
+	content: "THAT ARE WORTH SEEING";
+    display: inline-block;
+    width: 277px;
+    height: 60px;
+    background: #38afe5;
+    position: absolute;
+    top: 345px;
+    left: 62px;
+    text-align: center;
+    font-size: 20px;
+    font-family: "PathwayGothicOne Book", sans-serif;
+    color: #fff;
+    line-height: 3;
+}
+
+.arrows {
+	position: absolute;
+	top: 450px;
+    left: 50px;
+}
+
+h2 {
+	font-family: "PathwayGothicOne Book", sans-serif;
+	font-size: 23px;
+	color: #263555;
+	padding-left: 60px;
+	padding-bottom: 60px;
+}
+
+.content {
+	margin: 0 60px;
+	position: relative;
+}
+
+.content img {
+	width: 287px;
+	height: 270px;
+	padding-bottom: 60px;
+	padding-right: 10px;
+}
+
+.destination {
+	display: inline-block;
+}
+
+.venice,
+.usa,
+.france {
+	float: left;
+}
+
+.content p {
+	color: #fff;
+	font-family: Arial, sans-serif;
+	font-size: 10px;
+	line-height: 15px;
+	padding: 10px;
+}
+
+.content h3 {
+	color: #fff;
+	font-family: Arial, sans-serif;
+	font-size: 20px;
+	padding: 10px;
+}
+
+button {
+	border-radius: 7px;
+	margin-left: 75px;
+	margin-top: 33px;
+}
+
+.venice div{
+	width: 150px;
+	height: 270px;
+	background: rgba(25, 49, 73, 0.8);
+	position: absolute;
+	top: 83px;
+	visibility: hidden;
+}
+
+.usa div{
+	width: 150px;
+	height: 270px;
+	background: rgba(25, 49, 73, 0.8);
+	position: absolute;
+	top: 83px;
+	visibility: hidden;
+}
+
+.france div{
+	width: 150px;
+	height: 270px;
+	background: rgba(25, 49, 73, 0.8);
+	position: absolute;
+	top: 83px;
+	visibility: hidden;
+}
+
+.venice:hover div {
+	visibility: visible;
+}
+
+.usa:hover div {
+	visibility: visible;
+}
+
+.france:hover div {
+	visibility: visible;
+}
+
+footer a{
+    position: fixed;
+    display: block;
+    bottom: 20px;
+    right: 295px;
+}
+
