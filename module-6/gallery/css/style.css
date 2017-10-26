@@ -84,7 +84,7 @@ main {
 	width: 1024px;
 	background: #fff;
 	margin: auto;
-	margin-top: 50px;
+	margin-top: 60px;
 	padding: 0 60px;
 	padding-top: 95px;
 	padding-bottom: 140px;
@@ -114,21 +114,6 @@ h2 {
     right: 245px;
 }
 
-.bottom_menu {
-	width: 1024px;
-	background:#30455b;
-	margin: auto;
-	padding: 30px 60px;
-	display: flex;
-	justify-content: space-around;
-}
-
-p {
-	color: #fff;
-	font-family: "Open Sans Condensed";
-	font-size:15px;
-}
-
 a {
 	text-decoration: none;
 }
@@ -153,22 +138,71 @@ a {
 	background-position: center;
 }
 
-.sprites {
-	background-image: url(../img/css_sprites.png);
-	background-repeat: no-repeat;
-	background-position: center;
-	padding: 30px 0;
+.bottom_menu {
+  width: 1024px;
+  background:#30455b;
+  margin: auto;
+  padding: 15px 60px;
+  display: flex;
+  justify-content: space-around;
 }
 
+.bottom_menu p {
+  color: #fff;
+  font-family: "Open Sans Condensed";
+  font-size:15px;
+  padding-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.sprites-row {
+  width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.sprites {
+  background-image: url(../img/css_sprites.png);
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  width: 60px;
+  height: 60px;
+  float: left;
+}
+
+.sprites.gl {
+  background-position: -60px 0px;
+}
+
+.sprites.li {
+  background-position: -120px;
+}
+
+.sprites.tw {
+  background-position: -180px;
+}
+
+.sprites a {
+  width: 60px;
+  height: 60px;
+  display: block;
+  }
+
 .journ {
-	margin-bottom: 25px;
-	padding-left: 600px;
+  width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
 }
 
 .journ p {
-	font-family: "Arial Regular", sans-serif;
-	font-size: 12px;
-	display: inline-block;
-	padding-right: 50px;
+  font-family: "Arial Regular", sans-serif;
+  font-size: 12px;
+  color: #fff;
+  display: inline-block;
 }
-

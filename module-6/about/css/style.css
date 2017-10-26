@@ -1,5 +1,5 @@
 body {
-  background-image: url(../img/bckg.png);
+  background-image: url(../img/background.png);
   background-repeat: no-repeat;
 }
 
@@ -84,144 +84,168 @@ body {
 	margin-top: 15px;
 }
 
-.main {
+main {
   width: 1024px;
-  background-color: #fff;
-  margin: auto;
-  margin-top: 60px;
-  padding: 60px;
+  background: #fff;
+  margin: 60px auto;
+  margin-bottom: 0;
+  padding: 60px 60px;
+}
+
+.block_one {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.left_side {
+.left {
   width: 65%;
-  display: inline-block;
-  position: relative;
-}
-
-.one {
-  padding-bottom: 50px;
 }
 
 h2 {
-  font-family: "PathwayGothicOne Book", sans-serif;
-  font-size: 23px;
+  font-size: 25px;
+  font-family: "PathwayGothicOne-Book", sans-serif;
   color: #263555;
   padding-bottom: 50px;
 }
 
-h3{
-  font-family: "Arial Regular", sans-serif;
-  font-size: 12px;
-  color: #263555;
-  padding-left: 40px;
-  padding-bottom: 5px;
-}
-
-.left_side h2:before{
-  content: "23 APR";
-  font-size: 10px;
-  font-family: "Arial Regular", sans-serif; 
-  position: absolute;
-  left: 1px;
-  top: 70px;
-  background: #38a;
-  border-radius: 50px;
-  width: 30px;
-  height: 30px;
-  color: #fff;
-  line-height: 12px;
-  text-align: center;
-}
-
-.left_side h2:after{
-  content: "28 APR";
-  font-size: 10px;
-  font-family: "Arial Regular", sans-serif; 
-  position: absolute;
-  left: 1px;
-  bottom: 275px;
-  background: #38a;
-  border-radius: 50px;
-  width: 30px;
-  height: 30px;
-  color: #fff;
-  line-height: 12px;
-  text-align: center;
-}
-
-.users {
-  font-family: "Arial Regular", sans-serif;
-  font-size: 10px;
-  color: #4e5050;
-  padding-left: 40px;
-  padding-bottom: 20px;
-}
-
-.post{
+.plane {
   float: left;
+  padding-right: 25px;
 }
 
-.comment {
-  text-align: right;
-}
-
-h4 {
+h3 {
   font-family: "Arial Regular", sans-serif;
-  font-size: 12px;
+  font-size: 15px;
   color: #263555;
   padding-bottom: 20px;
-}
-
-
-.photo_one {
-  float: left;
-  padding-right: 20px;
 }
 
 p {
   font-family: "Arial Regular", sans-serif;
-  font-size: 10px;
-  line-height: 14px;
-  color: #4e5050;
+  font-size: 13px;
+  line-height: 19px;
+  padding-bottom: 20px;
 }
 
-.paragraph {
-  padding-top: 15px;
-  line-height: 14px;
+.right {
+  width: 30%;
 }
 
-button {
-  margin-top: 25px;
-  border-radius: 7px;
+ol li {
+  font-family: "Arial Regular", sans-serif;
+  font-size: 13px;
+  padding-left: 30px;
+}
+
+ol .title {
+  padding-left: 0;
+}
+
+ol {
+  padding-left: 60px;
+  list-style: none;
+  counter-reset: point;
+}
+
+ol li {
+  position: relative;
+}
+
+ol li:after {
+  content: counter(point);
+  counter-increment: point 1;
+  font-size: 13px;
+  font-family: "Arial Regular", sans-serif; 
+  position: absolute;
+  left: -20px;
+  top: 10px;
+  background: #38a;
+  border-radius: 50px;
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  line-height: 30px;
+  text-align: center;
 }
 
 hr {
-  width: 675px;
-  color: #dedbdb;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  width: 930px;
+  border-color: #dedbdb;
+  margin: 55px 0;
 }
 
-.sidebar h2 {
-  width: 35px;
-  padding-left: 80px;
-}
-
-.sidebar ul {
+.block_two {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.square {
+  width: 210px;
+  height: 190px;
+  background: #fcfafa;
+  border: 1px solid #dfdcdc;
+  position: relative;
+}
+
+.square:before {
+  content: "\201c";
+  color: #38afe5;
+  position: absolute;
+  top: 10px;
+  display: inline-block;
+  color: #263555;
+  padding: 10px;
+}
+
+.square:after {
+  content: "\201d";
+  color: #38afe5;
+  display: inline-block;
+  position: absolute;
+  bottom: 20px;
+  right: 110px;
+  color: #263555;
+}
+
+.square p {
+  font-family: "Arial Regular", sans-serif;
+  font-size: 15px;
+  color: #263555;
+  padding: 20px;
+  line-height: 19px;
+}
+
+.author {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #263555;
+  padding-top: 60px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.director {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  color: #4e5050;
+  padding-top: 20px;
+  padding-left: 15px;
+}
+
+.arrows {
+  padding-top: 35px;
 }
 
 .arrows ul {
-  padding-left: 80px;
   font-family: Arial, sans-serif;
   font-size: 15px;
   color: #263555;
-  padding-bottom: 30px;
 }
 
 .arrows li {
+  width: 46%;
   padding-right: 15px;
   padding-bottom: 25px;
   display: inline-block;
@@ -234,32 +258,11 @@ hr {
   margin-right: 20px;
 }
 
-
-.archiv ul {
-  padding-left: 80px;
-  font-family: Arial, sans-serif;
-  font-size: 15px;
-  color: #263555;
-}
-
-.archiv li {
-  padding-right: 15px;
-  padding-bottom: 25px;
-  display: inline-block;
-}
-
-.archiv ul li:before {
-  content: "\2192";
-  color: #38afe5;
-  display: inline-block;
-  margin-right: 20px;
-}
-
 .scroll a{
-    position: fixed;
-    display: block;
-    bottom: 225px;
-    right: 245px;
+  position: fixed;
+  display: block;
+  bottom: 242px;
+  right: 245px;
 }
 
 .bottom_menu {
@@ -321,7 +324,6 @@ a {
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  padding-bottom: 20px;
 }
 
 .journ p {
