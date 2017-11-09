@@ -2,53 +2,60 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Gallery</title>
-	<link href="https://fonts.googleapis.com/css?family=Dorsa" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet" >
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dorsa" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet" >
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<div class="wrapper">
 		<header class="menu">
-    		<ul>
-      			<li class="menu__item">
-        			<a href="#" class="sub-sign">Home</a>
-      			</li>
-      			<li class="menu__item">
-        			<a href="#" class="sub-sign">About</a>
-        			<ul class="submenu">
-          				<li class="submenu__item">
-            				<a href="#">Agency</a>
-          				</li>
-          				<li class="submenu__item">
-            				<a href="#">News</a>
-          				</li>
-          				<li class="submenu__item">
-            				<a href="#">Team</a>
-          				</li>
-        			</ul>
-      			</li>
-      			<li class="menu__item">
-        			<a href="#">Gallery</a>
-      			</li>
-      			<li class="menu__item">
-      				<div>
-						<a href="#" class="logo">Journey</a>
-					</div>
-				</li>
-      			<li class="menu__item">
-        			<a href="#">Tours</a>
-      			</li>
-      			<li class="menu__item">
-        			<a href="#">Blog</a>
-      			</li>
-      			<li class="menu__item">
-        			<a href="#">Contacts</a>
-      			</li>
-      		</ul>
+            <div class="main_logo">
+                <a href="#" class="logo">Journey</a>
+            </div>
+            <div class="main_block">
+                <div class="block_one">
+                    <ul>
+      			       <li class="menu__item">
+                            <a href="#" class="sub-sign">Home</a>
+      			       </li>
+                       <li class="menu__item">
+                            <a href="#" class="sub-sign">About</a>
+                            <ul class="submenu">
+                                <li class="submenu__item">
+            				        <a href="#">Agency</a>
+                                </li>
+                                <li class="submenu__item">
+            				        <a href="#">News</a>
+                                </li>
+                                <li class="submenu__item">
+            				        <a href="#">Team</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#">Gallery</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="block_two"></div>
+                <div class="block_three">
+                    <ul>
+      			       <li class="menu__item">
+                            <a href="#">Tours</a>
+      			       </li>
+      			       <li class="menu__item">
+        			         <a href="#">Blog</a>
+      			       </li>
+      			       <li class="menu__item">
+                            <a href="#">Contacts</a>
+      			       </li>
+      		        </ul>
+                </div>
+            </div>
     	</header>
     	<main>
             <div class="conteiner">
@@ -78,27 +85,27 @@
     				    <img src="img/img6.jpg" alt="">
     				    <div></div>
                     </div>
-                    <div class="img_box">
+                    <div class="img_box none-1">
     				    <img src="img/img7.jpg" alt="">
     				    <div></div>
                     </div>
-                    <div class="img_box">
-                        <img src="img/img8.jpg" alt="">
-                        <div></div>
-                    </div>
-                    <div class="img_box">
-    				    <img src="img/img9.jpg" alt="">
+                    <div class="img_box none-1">
+    				    <img src="img/img8.jpg" alt="">
     				    <div></div>
                     </div>
-                </div>
-                <div class="scroll">
-                    <a href="#">
-    				    <img src="img/top-button.png" alt="scroll">
-                    </a>
+                    <div class="img_box none">
+    				    <img class="none"src="img/img9.jpg" alt="">
+    				    <div></div>
+                    </div>
                 </div>
             </div>
     	</main>
     	<footer>
+            <div class="scroll">
+                <a href="#">
+                    <img src="img/top-button.png" alt="scroll">
+                </a>
+            </div>
             <div class="bottom_menu">
                 <div>
                     <a href="#">
@@ -118,13 +125,26 @@
                         <p>FAMILY TRAVEL</p>
                     </a>
                 </div>
-                <div>
+                <div class="contacts">
                     <a href="#">
                         <p>CONTACT US:</p><br>
                         <p>TEL: 1-800-234-5678<br><br>
                         info@demolink.org</p>
                     </a>
-                </div>
+                </div> 
+            </div>
+            <div class="contanct_us">
+                <a href="#">
+                    <p id="us">CONTACT US:</p>
+                    <div>
+                        <img src="img/phone.png" alt="">
+                    </div>
+                    <p class="phone">+1-800-234-5678</p>
+                    <div>
+                        <img src="img/mail.png" alt="">
+                    </div>
+                    <p class="phone">info@demolink.org</p>
+                </a>
             </div>
             <div class="sprites">
                 <ul class="nav">
@@ -141,7 +161,7 @@
                         <a href="#" class="nav__link"></a>
                     </li>
                 </ul>
-            </div>            
+            </div>
             <div class="copywriting">
                 <p>Journey © 2013 | Privacy Policy | Website designed by TemplateMonster.com</p>
             </div>

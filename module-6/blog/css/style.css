@@ -3,48 +3,58 @@ body {
   background-repeat: no-repeat;
 }
 
-.wrapper {
-  width: 100%;
-}
-
 .menu {
-  width: 1024px;
+  max-width: 830px;
   font-size: 20px;
   color: #fff;
   text-transform: uppercase;
   font-family: PathwayGothicOne, sans-serif;
   position: relative;
   margin: 0 auto;
+  display: block;
+ }
+
+ .main_block {
+  display: inline-flex;
+  justify-content: space-around;
+  margin-top: 50px;
+ }
+
+ .block_two {
+  width: 150px;
  }
 
 .menu__item {
   position: relative;
-  display: inline-block;
+  display: inline-flex;
+  flex-direction: row;
+  align-content: space-between;
 }
 
 .submenu:before {
   content: "";
   display: inline-block;
-  width: 0;
-  height: 0;
+  max-width: 0;
+  max-height: 0;
   border-style: solid;
   border-width: 0 10px 10px 10px;
   border-color: #fff transparent;
   position: absolute;
   top: -10px;
-  left: 47px;
+  left: 35px;
 }
 
 .menu__item > a,
 .submenu__item > a {
-  display: inline-block;
-  padding: 10px 30px; 
+  display: inline-flex;
+  padding: 10px 15px; 
   color: var(--accent-color);
   text-decoration: none;
+  margin: 0 auto;
 }
 
 .menu__item>a:hover {
-	color: #263555;
+  color: #263555;
 }
 
 .submenu {
@@ -53,12 +63,12 @@ body {
   left: -20px;
   list-style: none;
   color: #6b7488;
-  margin-top: 10px;
+  margin-top: 40px;
   border-radius: 5px;
-	height: 85px;
-	font-size: 14px;
-	margin-left: 25px;
-	line-height: 5px;
+  height: 85px;
+  font-size: 14px;
+  margin-left: 25px;
+  line-height: 5px;
 }
 
 .menu__item:hover>.submenu {
@@ -66,65 +76,73 @@ body {
   background: #fff;
 }
 
+.main_logo {
+  position: absolute;
+  left: 330px;
+  top: -10px;
+  margin-bottom: 50px;
+}
+
 .logo {
-	display: block;
-	position: relative;
-	width: 140px;
-	height: 140px;
-	border-radius: 50%;
-	background-color: #fff;
-	font-family: Dorsa, sans-serif;
-	font-size: 60px;
-	line-height: 140px;
-	font-weight: normal;
-	text-align: center;
-	text-transform: uppercase;
-	text-decoration: none;
-	color: #263555;
-	margin-top: 15px;
-}
-
-.main {
-  width: 1024px;
-  background-color: #fff;
-  margin: auto;
-  margin-top: 60px;
-  padding: 60px;
-  display: flex;
-}
-
-.left_side {
-  width: 65%;
-  display: inline-block;
+  display: block;
   position: relative;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background-color: #fff;
+  font-family: Dorsa, sans-serif;
+  font-size: 60px;
+  line-height: 140px;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #263555;
+  margin: 20px auto;
 }
 
-.one {
-  padding-bottom: 50px;
+.conteiner {
+	max-width: 1024px;
+	background: #fff;
+	margin: auto;
+	margin-top: 90px;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+}
+.wrapper {
+	margin: 100px 60px 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.left-block {
+	width: 70%;
 }
 
 h2 {
-  font-family: "PathwayGothicOne Book", sans-serif;
-  font-size: 23px;
-  color: #263555;
-  padding-bottom: 50px;
+	font-family: "PathwayGothicOne Book", sans-serif;
+	font-size: 23px;
+	color: #263555;
+	padding-bottom: 50px;
 }
 
 h3{
-  font-family: "Arial Regular", sans-serif;
-  font-size: 12px;
-  color: #263555;
-  padding-left: 40px;
-  padding-bottom: 5px;
+	font-family: "Arial Regular", sans-serif;
+	font-size: 12px;
+	color: #263555;
+	padding-left: 40px;
+	padding-bottom: 5px;
 }
 
-.left_side h2:before{
+.left-block h2:before{
   content: "23 APR";
   font-size: 10px;
   font-family: "Arial Regular", sans-serif; 
   position: absolute;
-  left: 1px;
-  top: 70px;
+  left: 60px;
+  top: 170px;
   background: #38a;
   border-radius: 50px;
   width: 30px;
@@ -134,13 +152,13 @@ h3{
   text-align: center;
 }
 
-.left_side h2:after{
+.left-block h2:after{
   content: "28 APR";
   font-size: 10px;
   font-family: "Arial Regular", sans-serif; 
   position: absolute;
-  left: 1px;
-  bottom: 275px;
+  left: 60px;
+  bottom: 355px;
   background: #38a;
   border-radius: 50px;
   width: 30px;
@@ -154,29 +172,35 @@ h3{
   font-family: "Arial Regular", sans-serif;
   font-size: 10px;
   color: #4e5050;
-  padding-left: 40px;
+  position: relative;
   padding-bottom: 20px;
 }
 
 .post{
-  float: left;
+  padding-left: 40px;
 }
 
 .comment {
   text-align: right;
+  position: absolute;
+  top: 0;
+  right: 50px;
+}
+
+article {
+	display: flex;
+	justify-content: space-between;
 }
 
 h4 {
   font-family: "Arial Regular", sans-serif;
   font-size: 12px;
   color: #263555;
-  padding-bottom: 20px;
+  line-height: 15px;
 }
 
-
-.photo_one {
-  float: left;
-  padding-right: 20px;
+.text {
+	padding-left: 20px;
 }
 
 p {
@@ -184,59 +208,50 @@ p {
   font-size: 10px;
   line-height: 14px;
   color: #4e5050;
-}
-
-.paragraph {
-  padding-top: 15px;
-  line-height: 14px;
+  padding-top: 20px;
 }
 
 button {
-  margin-top: 25px;
-  border-radius: 7px;
+	width: 60px;
+	height: 20px;
+	background: #fbf6fa;
+	border-radius: 7px;
+	border: 1px solid #d9d3d1;
+	font-family: "Arial Regular", sans-serif;
+	font-size: 11px;
+ 	margin: 20px 330px;
 }
 
 hr {
-  width: 675px;
+  width: 635px;
   color: #dedbdb;
   margin-top: 50px;
   margin-bottom: 50px;
 }
 
-.sidebar h2 {
-  width: 35px;
-  padding-left: 80px;
-}
-
-.sidebar ul {
-  display: flex;
-  flex-direction: column;
+.sidebar {
+  margin-left: 35px;
 }
 
 .arrows ul {
-  padding-left: 80px;
   font-family: Arial, sans-serif;
   font-size: 15px;
   color: #263555;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
 }
 
 .arrows li {
   padding-right: 15px;
   padding-bottom: 25px;
-  display: inline-block;
 }
 
 .arrows ul li:before {
   content: "\2192";
   color: #38afe5;
-  display: inline-block;
   margin-right: 20px;
 }
 
-
 .archiv ul {
-  padding-left: 80px;
   font-family: Arial, sans-serif;
   font-size: 15px;
   color: #263555;
@@ -245,28 +260,26 @@ hr {
 .archiv li {
   padding-right: 15px;
   padding-bottom: 25px;
-  display: inline-block;
 }
 
 .archiv ul li:before {
   content: "\2192";
   color: #38afe5;
-  display: inline-block;
   margin-right: 20px;
 }
 
-.scroll a{
-    position: fixed;
-    display: block;
-    bottom: 225px;
-    right: 245px;
+.scroll a {
+	text-decoration: none;
+	position: fixed;
+	bottom: 330px;
+	right: 300px;
 }
 
 .bottom_menu {
   width: 1024px;
   background:#30455b;
   margin: auto;
-  padding: 15px 60px;
+  padding: 25px 0;
   display: flex;
   justify-content: space-around;
 }
@@ -275,48 +288,74 @@ hr {
   color: #fff;
   font-family: "Open Sans Condensed";
   font-size:15px;
-  padding-bottom: 20px;
+  padding-top: 0;
 }
 
 a {
   text-decoration: none;
 }
 
-.sprites-row {
-  width: 1024px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-}
-
 .sprites {
-  background-image: url(../img/css_sprites.png);
+  max-width: 300px;
+  margin: 15px auto;
+  display: flex;
+}
+
+.nav {
+  margin: auto;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav__item {
+  height: 50px;
+  flex-basis: 50px;
+}
+
+.nav__item>a {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+}
+
+.nav__item:nth-of-type(1)>a {
+  background-image: url('../img/css_sprites.png');
   background-repeat: no-repeat;
-  background-position: 0px 0px;
-  width: 60px;
-  height: 60px;
-  float: left;
+  background-position: -180px 0px;
+  filter: opacity(.7);
 }
 
-.sprites.gl {
-  background-position: -60px 0px;
+.nav__item:nth-of-type(2)>a {
+  background-image: url('../img/css_sprites.png');
+  background-repeat: no-repeat;
+  background-position: -70px 0px;
+  filter: opacity(.7);
 }
 
-.sprites.li {
-  background-position: -120px;
+.nav__item:nth-of-type(3)>a {
+  background-image: url('../img/css_sprites.png');
+  background-repeat: no-repeat;
+  background-position: -130px 0px;
+  filter: opacity(.7);
 }
 
-.sprites.tw {
-  background-position: -180px;
+.nav__item:nth-of-type(4)>a {
+  background-image: url('../img/css_sprites.png');
+  background-repeat: no-repeat;
+  background-position: -190px 0px;
+  filter: opacity(.7);
 }
 
-.sprites a {
-  width: 60px;
-  height: 60px;
-  display: block;
-  }
+.nav__item>a:hover {
+  filter: opacity(1);
+}
 
-.journ {
+
+.copywriting {
   width: 1024px;
   margin: 0 auto;
   display: flex;
@@ -324,7 +363,7 @@ a {
   padding-bottom: 20px;
 }
 
-.journ p {
+.copywriting p {
   font-family: "Arial Regular", sans-serif;
   font-size: 12px;
   color: #fff;

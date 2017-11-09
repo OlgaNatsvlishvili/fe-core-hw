@@ -1,42 +1,42 @@
 body {
-	background-image: url(../img/bckg.jpg);
+	background-image: url(../img/bckg.png);
 	background-repeat: no-repeat;
 }
 
 .menu {
-	width: 1024px;
-  	font-size: 20px;
-  	color: #fff;
-  	text-transform: uppercase;
-  	font-family: PathwayGothicOne, sans-serif;
-  	position: relative;
-  	margin: 0 auto;
+  width: 1024px;
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: PathwayGothicOne, sans-serif;
+  position: relative;
+  margin: 0 auto;
  }
 
 .menu__item {
-  	position: relative;
-  	display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 .submenu:before {
 	content: "";
-    display: inline-block;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0 10px 10px 10px;
-    border-color: #fff transparent;
-    position: absolute;
-    top: -10px;
-    left: 47px;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 10px 10px 10px;
+  border-color: #fff transparent;
+  position: absolute;
+  top: -10px;
+  left: 47px;
 }
 
 .menu__item > a,
 .submenu__item > a {
-  	display: inline-block;
-  	padding: 10px 30px; 
-  	color: var(--accent-color);
-  	text-decoration: none;
+  display: inline-block;
+  padding: 10px 30px; 
+  color: var(--accent-color);
+  text-decoration: none;
 }
 
 .menu__item>a:hover {
@@ -44,22 +44,23 @@ body {
 }
 
 .submenu {
-  	display: none;
-  	position: absolute;
-  	left: -20px;
-  	list-style: none;
-  	color: #6b7488;
-  	margin-top: 10px;
-  	border-radius: 5px;
+  display: none;
+  position: absolute;
+  left: -20px;
+  list-style: none;
+  color: #6b7488;
+  margin-top: 10px;
+  border-radius: 5px;
 	height: 85px;
 	font-size: 14px;
 	margin-left: 25px;
 	line-height: 5px;
+  z-index: 1;
 }
 
 .menu__item:hover>.submenu {
-  	display: block;
-  	background: #fff;
+  display: block;
+  background: #fff;
 }
 
 .logo {
@@ -85,9 +86,12 @@ main {
 	background: #fff;
 	margin: auto;
 	margin-top: 60px;
-	padding: 0 60px;
 	padding-top: 95px;
 	padding-bottom: 140px;
+}
+
+.conteiner {
+  margin: 60px;
 }
 
 h2 {
@@ -108,10 +112,10 @@ h2 {
 }
 
 .scroll a{
-    position: fixed;
-    display: block;
-    bottom: 235px;
-    right: 245px;
+  position: fixed;
+  display: block;
+  bottom: 235px;
+  right: 295px;
 }
 
 a {
@@ -142,7 +146,7 @@ a {
   width: 1024px;
   background:#30455b;
   margin: auto;
-  padding: 15px 60px;
+  padding: 25px 0;
   display: flex;
   justify-content: space-around;
 }
@@ -151,56 +155,79 @@ a {
   color: #fff;
   font-family: "Open Sans Condensed";
   font-size:15px;
-  padding-bottom: 20px;
 }
 
 a {
   text-decoration: none;
 }
 
-.sprites-row {
-  width: 1024px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-}
-
 .sprites {
-  background-image: url(../img/css_sprites.png);
+  max-width: 300px;
+  margin: 15px auto;
+  display: flex;
+}
+
+.nav {
+  margin: auto;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav__item {
+  height: 50px;
+  flex-basis: 50px;
+}
+
+.nav__item>a {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+}
+
+.nav__item:nth-of-type(1)>a {
+  background-image: url('../img/css_sprites.png');
   background-repeat: no-repeat;
-  background-position: 0px 0px;
-  width: 60px;
-  height: 60px;
-  float: left;
+  background-position: -180px 0px;
+  filter: opacity(.7);
 }
 
-.sprites.gl {
-  background-position: -60px 0px;
+.nav__item:nth-of-type(2)>a {
+  background-image: url('../img/css_sprites.png');
+  background-repeat: no-repeat;
+  background-position: -70px 0px;
+  filter: opacity(.7);
 }
 
-.sprites.li {
-  background-position: -120px;
+.nav__item:nth-of-type(3)>a {
+  background-image: url('../img/css_sprites.png');
+  background-repeat: no-repeat;
+  background-position: -130px 0px;
+  filter: opacity(.7);
 }
 
-.sprites.tw {
-  background-position: -180px;
+.nav__item:nth-of-type(4)>a {
+  background-image: url('../img/css_sprites.png');
+  background-repeat: no-repeat;
+  background-position: -190px 0px;
+  filter: opacity(.7);
 }
 
-.sprites a {
-  width: 60px;
-  height: 60px;
-  display: block;
-  }
+.nav__item>a:hover {
+  filter: opacity(1);
+}
 
-.journ {
-  width: 1024px;
-  margin: 0 auto;
+
+.copywriting {
   display: flex;
   justify-content: center;
   padding-bottom: 20px;
 }
 
-.journ p {
+.copywriting p {
   font-family: "Arial Regular", sans-serif;
   font-size: 12px;
   color: #fff;
