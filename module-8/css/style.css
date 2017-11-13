@@ -116,7 +116,7 @@ main {
 
 h2 {
 	font-family: "PathwayGothicOne Book", sans-serif;
-	font-size: 23px;
+	font-size: 28px;
 	color: #263555;
 	padding-bottom: 50px;
 }
@@ -156,7 +156,7 @@ h2 {
 	text-decoration: none;
 	position: fixed;
 	bottom: 250px;
-	right: 170px;
+	right: 10px;
 }
 
 .bottom_menu {
