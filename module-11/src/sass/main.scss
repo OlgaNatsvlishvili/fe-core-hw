@@ -8,7 +8,7 @@ $main-font: "Pathway Gothic One", sans-serif;
 $main-width: 904px;
 
 body {
-	background-image: url(../images/bckg2.png);
+	background-image: url(/images/bckg2.png);
 	background-repeat: no-repeat;
 }
 
@@ -164,7 +164,7 @@ body {
 	width: 287px;
 	height: 155px;
 	background: rgba(25, 49, 73, 0.8);
-	background-image: url(../images/zoom-in.svg);
+	background-image: url(/images/zoom-in.svg);
 	background-repeat: no-repeat;
 	background-position: center;
 }
