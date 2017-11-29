@@ -4,53 +4,40 @@ body {
 }
 
 .menu {
-  max-width: 830px;
-  font-size: 20px;
+  width: 830px;
+  font-size: 24px;
   color: #fff;
   text-transform: uppercase;
-  font-family: PathwayGothicOne, sans-serif;
+  font-family: "Pathway Gothic One", sans-serif;
   position: relative;
   margin: 0 auto;
-  display: block;
- }
-
- .main_block {
-  display: inline-flex;
-  justify-content: space-around;
-  margin-top: 50px;
- }
-
- .block_two {
-  width: 150px;
+  margin-bottom: 70px;
  }
 
 .menu__item {
   position: relative;
   display: inline-flex;
-  flex-direction: row;
-  align-content: space-between;
 }
 
 .submenu:before {
   content: "";
   display: inline-block;
-  max-width: 0;
-  max-height: 0;
+  width: 0;
+  height: 0;
   border-style: solid;
   border-width: 0 10px 10px 10px;
   border-color: #fff transparent;
   position: absolute;
   top: -10px;
-  left: 35px;
+  left: 47px;
 }
 
 .menu__item > a,
 .submenu__item > a {
   display: inline-flex;
-  padding: 10px 15px; 
+  padding: 10px 30px; 
   color: var(--accent-color);
   text-decoration: none;
-  margin: 0 auto;
 }
 
 .menu__item>a:hover {
@@ -63,24 +50,17 @@ body {
   left: -20px;
   list-style: none;
   color: #6b7488;
-  margin-top: 40px;
+  margin-top: 50px;
   border-radius: 5px;
   height: 85px;
-  font-size: 14px;
-  margin-left: 25px;
+  font-size: 20px;
+  margin-left: 20px;
   line-height: 5px;
 }
 
 .menu__item:hover>.submenu {
   display: block;
   background: #fff;
-}
-
-.main_logo {
-  position: absolute;
-  left: 330px;
-  top: -10px;
-  margin-bottom: 50px;
 }
 
 .logo {
@@ -98,14 +78,13 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   color: #263555;
-  margin: 20px auto;
+  margin-top: 15px;
 }
 
 .conteiner {
 	max-width: 1024px;
 	background: #fff;
 	margin: auto;
-	margin-top: 90px;
 	position: relative;
 	display: flex;
 	justify-content: space-between;
@@ -122,8 +101,8 @@ body {
 }
 
 h2 {
-	font-family: "PathwayGothicOne Book", sans-serif;
-	font-size: 23px;
+	font-family: "Pathway Gothic One", sans-serif;
+	font-size: 32px;
 	color: #263555;
 	padding-bottom: 50px;
 }
@@ -138,7 +117,7 @@ h3{
 
 .left-block h2:before{
   content: "23 APR";
-  font-size: 10px;
+  font-size: 9px;
   font-family: "Arial Regular", sans-serif; 
   position: absolute;
   left: 60px;
@@ -154,7 +133,7 @@ h3{
 
 .left-block h2:after{
   content: "28 APR";
-  font-size: 10px;
+  font-size: 9px;
   font-family: "Arial Regular", sans-serif; 
   position: absolute;
   left: 60px;
@@ -237,12 +216,12 @@ hr {
   font-family: Arial, sans-serif;
   font-size: 15px;
   color: #263555;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 
 .arrows li {
   padding-right: 15px;
-  padding-bottom: 25px;
+  padding-bottom: 20px;
 }
 
 .arrows ul li:before {
@@ -259,7 +238,7 @@ hr {
 
 .archiv li {
   padding-right: 15px;
-  padding-bottom: 25px;
+  padding-bottom: 20px;
 }
 
 .archiv ul li:before {
@@ -276,27 +255,29 @@ hr {
 }
 
 .bottom_menu {
-  width: 1024px;
+  width: 904px;
   background:#30455b;
   margin: auto;
-  padding: 25px 0;
+  padding: 30px 60px;
   display: flex;
   justify-content: space-around;
-}
-
-.bottom_menu p {
-  color: #fff;
-  font-family: "Open Sans Condensed";
-  font-size:15px;
-  padding-top: 0;
 }
 
 a {
   text-decoration: none;
 }
 
+.bottom_menu p {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Open Sans Condensed";
+  font-size:15px;
+  line-height: 12px;
+  padding-top: 0;
+}
+
 .sprites {
-  max-width: 300px;
+  max-width: 250px;
   margin: 15px auto;
   display: flex;
 }
@@ -332,21 +313,21 @@ a {
 .nav__item:nth-of-type(2)>a {
   background-image: url('../img/css_sprites.png');
   background-repeat: no-repeat;
-  background-position: -70px 0px;
+  background-position: 0px 0px;
   filter: opacity(.7);
 }
 
 .nav__item:nth-of-type(3)>a {
   background-image: url('../img/css_sprites.png');
   background-repeat: no-repeat;
-  background-position: -130px 0px;
+  background-position: -70px 0px;
   filter: opacity(.7);
 }
 
 .nav__item:nth-of-type(4)>a {
   background-image: url('../img/css_sprites.png');
   background-repeat: no-repeat;
-  background-position: -190px 0px;
+  background-position: -130px 0px;
   filter: opacity(.7);
 }
 
@@ -354,18 +335,16 @@ a {
   filter: opacity(1);
 }
 
-
 .copywriting {
-  width: 1024px;
+  max-width: 1024px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  padding-bottom: 20px;
 }
 
 .copywriting p {
   font-family: "Arial Regular", sans-serif;
   font-size: 12px;
   color: #fff;
-  display: inline-block;
+  margin: 15px 0;
 }
