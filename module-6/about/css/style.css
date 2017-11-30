@@ -262,8 +262,8 @@ hr {
 .scroll a{
   position: fixed;
   display: block;
-  bottom: 275px;
-  right: 295px;
+  bottom: 60%;
+  left: calc(100% - 20%);
 }
 
 .bottom_menu {

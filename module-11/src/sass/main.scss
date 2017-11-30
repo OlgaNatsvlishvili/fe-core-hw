@@ -29,7 +29,7 @@ body {
  	-ms-flex-pack: distribute;
  	position: absolute;
     top: 50px;
-    left: 90px;
+    left: -25px;
 	 &__block--two {
 		 width: 150px;
 	 }
@@ -57,13 +57,13 @@ body {
 	border-color: #fff transparent;
 	position: absolute;
 	top: -10px;
-	left: 30px;
+	left: 50px;
 }
 
 .menu__item > .menu__item--link,
 .submenu__item > .submenu__item--link {
 	display: inline-flex;
-	padding: 10px 15px; 
+	padding: 10px 35px;
 	color: var(--accent-color);
 	text-decoration: none;
 	margin: 0 auto;

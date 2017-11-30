@@ -133,8 +133,8 @@ h2 {
 .scroll a{
   position: fixed;
   display: block;
-  bottom: 245px;
-  right: 295px;
+  bottom: 55%;
+  left: calc(100% - 20%);
 }
 
 a {

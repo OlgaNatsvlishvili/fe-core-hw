@@ -250,8 +250,8 @@ hr {
 .scroll a {
 	text-decoration: none;
 	position: fixed;
-	bottom: 330px;
-	right: 300px;
+	bottom: 60%;
+    left: calc(100% - 20%);
 }
 
 .bottom_menu {
