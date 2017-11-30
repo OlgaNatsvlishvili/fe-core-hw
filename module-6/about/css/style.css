@@ -262,7 +262,7 @@ hr {
 .scroll a{
   position: fixed;
   display: block;
-  bottom: 60%;
+  bottom: 35%;
   left: calc(100% - 20%);
 }
 
